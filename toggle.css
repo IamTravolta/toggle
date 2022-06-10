@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    padding: 2rem;
+    background-color: bisque;
+}
+
+#menu-nav li{
+    display:grid;
+    grid-template-columns: 2fr;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    flex: 1 0 0;
+    gap: 10px;
+    padding: 2rem;
+    padding: 20px;
+    grid-gap: 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid rgb(3, 3, 3);
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 40%;
+    transition: 500ms;
+
+}
+
+#menu-nav li  > *{
+    display:flex;
+    align-content: space-around;
+}
+
+#menu-nav li label{
+    display:grid;
+    position: absolute;
+    margin-left: 20px;
+}
+
+
+#menu-nav{
+    width: 40%;
+    transition: 500ms;
+    display:hidden;
+    transition: 500ms;
+
+}
+
+
+.hideme{
+    display:none;
+    opacity: 0;
+    transition: 500ms;
+}
+
+
+.showslide{
+    transition: 500ms;
+    margin-left: -100px;
+}
+
+.transme{
+    transition: 500ms;
+}
+    
+
+
+#tg-home {
+    background-color: bisque;
+}
+#tg-red {
+    background-color: red;
+}
+#tg-yellow {
+    background-color: yellow;
+}
+#tg-blue {
+    background-color: blue;
+}
+#tg-purple {
+    background-color: purple;
+}
+#tg-green {
+    background-color: green;
+}
+
+/* input[type="radio"]:checked + label {
+    color: pink;
+    transition: 500ms;
+}
+
+ */
+.toggle-nav{
+    width: 50px;
+    height: 50px;
+}
+
+.toggle-nav:hover svg{
+    fill: red;
+    transition: 500ms;
+}
+
+.sway-nav{
+   margin-left: 0;
+   transition: 500ms;
+}
+
+svg{
+    transition: 500ms;
+    width: 50px;
+    border-radius: 10px;
+}
